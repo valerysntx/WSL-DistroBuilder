@@ -3,8 +3,8 @@
   <Identity Name="DistroName.1.0" Version="1.0.0.0" Publisher="CN=DistroOwner" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="00000000-0000-0000-0000-000000000000" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>My Linux Distro</DisplayName>
-    <PublisherDisplayName>DistroOwner</PublisherDisplayName>
+    <DisplayName>WSLPHP</DisplayName>
+    <PublisherDisplayName>SNTXTECH LLC</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
@@ -18,7 +18,7 @@
   </Resources>
   <Applications>
     <Application Id="mydistro" Executable="mydistro.exe" EntryPoint="Windows.FullTrustApplication">
-      <uap:VisualElements DisplayName="My Linux Distro" Description="My Own Distro Launcher" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent">
+      <uap:VisualElements DisplayName="PHP7" Description="PHP7 on WSL" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" BackgroundColor="transparent">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\LargeTile.png" Square71x71Logo="Assets\SmallTile.png">
         </uap:DefaultTile>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />

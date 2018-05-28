@@ -1,0 +1,1 @@
+docker export $(docker create valerysntx/wslphp) | tar -C rootfs -xvf -

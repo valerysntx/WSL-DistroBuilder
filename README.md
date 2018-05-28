@@ -1,5 +1,24 @@
-# WSL Distro Launcher Reference Implementation
+
+# WSL Distro Launcher Extended
+  
+## RootFS 
+
+Linux distribution is allways a huge iso file ...
+but it should be packaged as install.tar.gz from docker instead... 
+
+Forget HUGE installation files for modern LINUX repositories...
+
+  
+```docker export $(docker create valerysntx/wslphp) | tar -C rootfs -xvf - ```
+
+ - You run docker export, got install.tar.gz file 
+ - put install.tar.gz into x64 folder of repository root,
+ - build.bat 
+ - test appx packaged in x64 folder
+
+
 ## Introduction 
+
 This is the C++ reference implementation for a Windows Subsystem for Linux (WSL) distribution installer/launcher application. Every distro package must include a launcher app, which is responsible for completing installation & registration of your distro with WSL, and for launching new distro instances atop WSL.
 
 Once you've built your distro launcher, packaged it along with the required art assets, manifest, and distro.tar.gz, and digitally signed the package, you will be able to sideload your distro on your own machine(s).

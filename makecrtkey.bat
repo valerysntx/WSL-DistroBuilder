@@ -1,0 +1,1 @@
+makecert -sk "MyKey" -pe -ss LocalMachine -pe -# 234234 -a SHA256 -$ individual -n CN=MyDistro
